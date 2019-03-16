@@ -1,0 +1,85 @@
+const webpack = require("webpack");
+//const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const pkg = require("./package.json");
+const path = require("path");
+
+const libraryName = pkg.name;
+
+module.exports = {
+  entry: path.join(__dirname, "./src/index.js"),
+  output: {
+    path: path.join(__dirname, "./dist"),
+    filename: "2077-components-react.js",
+    library: libraryName,
+    libraryTarget: "umd",
+    publicPath: "/dist/",
+    umdNamedDefine: true
+  },
+  node: {
+    net: "empty",
+    tls: "empty",
+    dns: "empty"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        use: ["babel-loader"],
+        include: path.resolve(__dirname, "src"),
+        exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: "style-loader" },
+          {
+            loader: "css-loader",
+            options: { importLoaders: 2 }
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              includePaths: [path.resolve(__dirname, "..", "node_modules")]
+            }
+          }
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader",
+            options: {
+              modules: true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  resolve: {
+    alias: {
+      react: path.resolve(__dirname, "./node_modules/react"),
+      "react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
+      assets: path.resolve(__dirname, "assets")
+    }
+  },
+  externals: {
+    // Don't bundle react or react-dom
+    react: {
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "React",
+      root: "React"
+    },
+    "react-dom": {
+      commonjs: "react-dom",
+      commonjs2: "react-dom",
+      amd: "ReactDOM",
+      root: "ReactDOM"
+    }
+  }
+};
