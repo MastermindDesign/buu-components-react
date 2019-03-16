@@ -1,0 +1,48 @@
+.basicCard {
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: none;
+  color: #fff;
+  .card-body {
+    .pdf417 {
+      img {
+        filter: sepia(100%);
+      }
+    }
+    .qrCodeBlock {
+      .qrCode0 {
+        //visibility: visible;
+        visibility: hidden;
+      }
+      .qrCode1 {
+        //visibility: visible;
+        visibility: hidden;
+      }
+      .qrCode2 {
+        //visibility: visible;
+        visibility: hidden;
+      }
+    }
+  }
+  &:hover {
+    // border: 1px solid #8b0035;
+    // color: #8b0035;
+    border: 3px solid #e60058;
+    color: #e60058;
+    text-shadow: 0 0 3px #e60058;
+    box-shadow: 0 0 3px #e60058;
+    .card-body {
+      .qrCodeBlock {
+        .qrCode0 {
+          visibility: visible;
+        }
+        .qrCode1 {
+          visibility: visible;
+        }
+        .qrCode2 {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
