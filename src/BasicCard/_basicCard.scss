@@ -1,8 +1,14 @@
+@import "../_global.scss"; 
+
 .basicCard {
   background-color: transparent;
-  border: 3px solid #fff;
+  border: 3px solid $default;
+  //border: 3px solid #fff;
   border-radius: none;
-  color: #fff;
+  color: $default;
+  text-shadow: 0 0 3px $default;
+  box-shadow: 0 0 3px $default;
+  //color: #fff;
   .card-body {
     .pdf417 {
       img {
@@ -10,6 +16,10 @@
       }
     }
     .qrCodeBlock {
+      .qrCode {
+        //visibility: visible;
+        visibility: hidden;
+      }
       .qrCode0 {
         //visibility: visible;
         visibility: hidden;
@@ -27,12 +37,15 @@
   &:hover {
     // border: 1px solid #8b0035;
     // color: #8b0035;
-    border: 3px solid #e60058;
-    color: #e60058;
-    text-shadow: 0 0 3px #e60058;
-    box-shadow: 0 0 3px #e60058;
+    border: 3px solid $green;
+    color: $green;
+    text-shadow: 0 0 3px $green;
+    box-shadow: 0 0 3px $green;
     .card-body {
       .qrCodeBlock {
+        .qrCode {
+          visibility: visible;
+        }
         .qrCode0 {
           visibility: visible;
         }

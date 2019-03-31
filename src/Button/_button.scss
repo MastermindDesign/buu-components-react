@@ -1,0 +1,425 @@
+@import "../_global.scss";
+
+$mdb-btn-fab-size: 38px !default;
+$mdb-btn-fab-size-mini: 40px !default;
+$mdb-btn-fab-font-size: 20px !default;
+
+$mdb-btn-icon-size: 32px !default;
+$mdb-btn-icon-size-mini: 17px !default;
+
+// Default
+.btn {
+    color: $default;
+    border-radius: 0px;
+    &:hover {
+        color: $background;
+        background-color: $default;
+    }
+    &.is-light {
+        color: $default;
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $default;
+        &:hover {
+            box-shadow: 0 0 3px $default;
+        }
+    }
+}
+
+.btn.btn-fab {
+    border-radius: 50% !important;
+    //font-size: $mdb-btn-fab-font-size;
+    height: 38px;
+    margin: auto;
+    min-width: 38px;
+    width: 38px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: normal;
+    &.has-glow {
+        text-shadow: 0 0 3px $default;
+        box-shadow: 0 0 3px $default;
+    }
+}
+
+.btn.btn-round {
+    border-radius:30px !important;
+    &.has-glow {
+        text-shadow: 0 0 3px $default;
+        box-shadow: 0 0 3px $default;
+    }
+}
+
+.btn.fill {
+    color: $background;
+    //border-radius: 0px;
+    background-color: $default;
+    &.is-light {
+        color: $white;
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $default;
+        box-shadow: 0 0 3px $default;
+    }
+}
+
+.btn.outline {
+    color: $default;
+    border: 1px solid $default;
+    background-color: none;
+    &:hover {
+        color: $background;
+        background-color: $default
+    }
+    &.is-light {
+        color: $default;
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $default;
+        box-shadow: 0 0 3px $default;
+    }
+}
+
+.btn.outline.fill {
+    color: $background;
+    border: 3px solid $default;
+    background-color: $default;
+}
+
+//White
+.btn.btn-white {
+    color: $white;
+    border-radius: 0px;
+    &:hover {
+        color: $background;
+        background-color: $white;
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $white;
+        &:hover {
+            box-shadow: 0 0 3px $white;
+        }
+    }
+}
+
+.btn.fill.btn-white {
+    color: $background;
+    border-radius: 0px;
+    background-color: $white;
+    
+}
+
+.btn.outline.btn-white {
+    color: $white;
+    border: 1px solid $white;
+    background-color: none;
+    &:hover {
+        color: $background;
+        background-color: $white
+    }
+}
+
+.btn.outline.fill.btn-white {
+    color: $background;
+    border: 3px solid $white;
+    background-color: $white;
+}
+
+//Red
+.btn.btn-red {
+    color: $red;
+    border-radius: 0px;
+    &:hover {
+        color: $background;
+        background-color: $red;
+    }
+    &.is-light {
+        color: $red;
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $red;
+        &:hover {
+            box-shadow: 0 0 3px $red;
+        }
+    }
+}
+
+.btn.fill.btn-red {
+    color: $background;
+    border-radius: 0px;
+    background-color: $red;
+    &.is-light {
+        color: $white;
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $red;
+        box-shadow: 0 0 3px $red;
+    }
+}
+
+.btn.outline.btn-red {
+    color: $red;
+    border: 1px solid $red;
+    background-color: none;
+    &:hover {
+        color: $background;
+        background-color: $red
+    }
+    &.is-light {
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $red;
+        box-shadow: 0 0 3px $red;
+    }
+}
+
+.btn.outline.fill.btn-red {
+    color: $background;
+    border: 3px solid $red;
+    background-color: $red;
+}
+
+//Blue
+.btn.btn-blue {
+    color: $blue;
+    border-radius: 0px;
+    &:hover {
+        color: $background;
+        background-color: $blue;
+    }
+    &.is-light {
+        color: $blue;
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $blue;
+        &:hover {
+            box-shadow: 0 0 3px $blue;
+        }
+    }
+}
+
+.btn.fill.btn-blue {
+    color: $background;
+    border-radius: 0px;
+    background-color: $blue;
+    &.is-light {
+        color: $white;
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $blue;
+        box-shadow: 0 0 3px $blue;
+    }
+}
+
+.btn.outline.btn-blue {
+    color: $blue;
+    border: 1px solid $blue;
+    background-color: none;
+    &:hover {
+        color: $background;
+        background-color: $blue
+    }
+    &.is-light {
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $blue;
+        box-shadow: 0 0 3px $blue;
+    }
+}
+
+.btn.outline.fill.btn-blue {
+    color: $background;
+    border: 3px solid $blue;
+    background-color: $blue;
+}
+
+//Green
+.btn.btn-green {
+    color: $green;
+    border-radius: 0px;
+    &:hover {
+        color: $background;
+        background-color: $green;
+    }
+    &.is-light {
+        color: $green;
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $green;
+        &:hover {
+            box-shadow: 0 0 3px $green;
+        }
+    }
+}
+
+.btn.fill.btn-green {
+    color: $background;
+    border-radius: 0px;
+    background-color: $green;
+    &.is-light {
+        color: $white;
+    }
+}
+
+.btn.outline.btn-green {
+    color: $green;
+    border: 1px solid $green;
+    background-color: none;
+    &:hover {
+        color: $background;
+        background-color: $green
+    }
+    &.is-light {
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.btn.outline.fill.btn-green {
+    color: $background;
+    border: 3px solid $green;
+    background-color: $green;
+}
+
+//Purple
+.btn.btn-purple {
+    color: $purple;
+    border-radius: 0px;
+    &:hover {
+        color: $background;
+        background-color: $purple;
+    }
+    &.is-light {
+        color: $purple;
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $purple;
+        &:hover {
+            box-shadow: 0 0 3px $purple;
+        }
+    }
+}
+
+.btn.fill.btn-purple {
+    color: $background;
+    border-radius: 0px;
+    background-color: $purple;
+    &.is-light {
+        color: $white;
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $purple;
+        box-shadow: 0 0 3px $purple;
+    }
+}
+
+.btn.outline.btn-purple {
+    color: $purple;
+    border: 1px solid $purple;
+    background-color: none;
+    &:hover {
+        color: $background;
+        background-color: $purple
+    }
+    &.is-light {
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $purple;
+        box-shadow: 0 0 3px $purple;
+    }
+}
+
+.btn.outline.fill.btn-purple {
+    color: $background;
+    border: 3px solid $purple;
+    background-color: $purple;
+}
+
+//Orange
+.btn.btn-orange {
+    color: $orange;
+    border-radius: 0px;
+    &:hover {
+        color: $background;
+        background-color: $orange;
+    }
+    &.is-light {
+        color: $orange;
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $orange;
+        &:hover {
+            box-shadow: 0 0 3px $orange;
+        }
+    }
+}
+
+.btn.fill.btn-orange {
+    color: $background;
+    border-radius: 0px;
+    background-color: $orange;
+    &.is-light {
+        color: $white;
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $orange;
+        box-shadow: 0 0 3px $orange;
+    }
+}
+
+.btn.outline.btn-orange {
+    color: $orange;
+    border: 1px solid $orange;
+    background-color: none;
+    &:hover {
+        color: $background;
+        background-color: $orange
+    }
+    &.is-light {
+        &:hover {
+            color: $white;
+        }
+    }
+    &.has-glow {
+        text-shadow: 0 0 3px $orange;
+        box-shadow: 0 0 3px $orange;
+    }
+}
+
+.btn.outline.fill.btn-orange {
+    color: $background;
+    border: 3px solid $orange;
+    background-color: $orange;
+}
