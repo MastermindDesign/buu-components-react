@@ -5,26 +5,26 @@ import BasicCard from "../BasicCard.jsx";
 storiesOf("Cards", module).add("basic", () => (
   <div>
     <div className="container">
-      <div class="row">
-        <div class="col-sm d-flex align-items-stretch">
+      <div className="row">
+        <div className="col-sm d-flex align-items-stretch">
           <BasicCard title="Hello" message="world" />
         </div>
-        <div class="col-sm d-flex align-items-stretch">
+        <div className="col-sm d-flex align-items-stretch">
           <BasicCard title="Hello" message="world this is a test" qrCode="1" />
         </div>
-        <div class="col-sm d-flex align-items-stretch">
+        <div className="col-sm d-flex align-items-stretch">
           <BasicCard title="Hello" message="world" qrCode="2" />
         </div>
-        <div class="col-sm d-flex align-items-stretch">
+        <div className="col-sm d-flex align-items-stretch">
           <BasicCard title="Hello" message="world" />
         </div>
-        <div class="col-sm d-flex align-items-stretch">
+        <div className="col-sm d-flex align-items-stretch">
           <BasicCard title="Hello" message="world" qrCode="1" />
         </div>
-        <div class="col-sm d-flex align-items-stretch">
+        <div className="col-sm d-flex align-items-stretch">
           <BasicCard title="Hello" message="world" qrCode="2" />
         </div>
-        <div class="col-sm d-flex align-items-stretch">
+        <div className="col-sm d-flex align-items-stretch">
           <BasicCard title="Hello" message="world" />
         </div>
       </div>
