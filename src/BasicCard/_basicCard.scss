@@ -1,0 +1,61 @@
+@import "../_global.scss"; 
+
+.basicCard {
+  background-color: transparent;
+  border: 3px solid $default;
+  //border: 3px solid #fff;
+  border-radius: none;
+  color: $default;
+  text-shadow: 0 0 3px $default;
+  box-shadow: 0 0 3px $default;
+  //color: #fff;
+  .card-body {
+    .pdf417 {
+      img {
+        filter: sepia(100%);
+      }
+    }
+    .qrCodeBlock {
+      .qrCode {
+        //visibility: visible;
+        visibility: hidden;
+      }
+      .qrCode0 {
+        //visibility: visible;
+        visibility: hidden;
+      }
+      .qrCode1 {
+        //visibility: visible;
+        visibility: hidden;
+      }
+      .qrCode2 {
+        //visibility: visible;
+        visibility: hidden;
+      }
+    }
+  }
+  &:hover {
+    // border: 1px solid #8b0035;
+    // color: #8b0035;
+    border: 3px solid $green;
+    color: $green;
+    text-shadow: 0 0 3px $green;
+    box-shadow: 0 0 3px $green;
+    .card-body {
+      .qrCodeBlock {
+        .qrCode {
+          visibility: visible;
+        }
+        .qrCode0 {
+          visibility: visible;
+        }
+        .qrCode1 {
+          visibility: visible;
+        }
+        .qrCode2 {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

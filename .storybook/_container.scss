@@ -1,0 +1,31 @@
+$css--font-face: true;
+$css--reset: true;
+$qrcolor: #e60058;
+//@import "~tropical-components/src/bootstrap/bootstrap.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+//@import "~tropical-components/src/ssb/tropical.scss";
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+
+@font-face {
+  font-family: Px437_IBM_VGA8;
+  src: url(./Px437_IBM_VGA8.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #2d2a2e;
+  color: #CAF0E9;
+  font-family: Px437_IBM_VGA8, monospace;
+  font-size: 1rem;
+  line-height: 1;
+  //   padding: 0;
+  //   margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  //font-smoothing: antialiased;
+  font-weight: 400;
+  .row {
+    margin-top: 15px;
+  }
+}
