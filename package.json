@@ -25,6 +25,7 @@
   "homepage": "https://github.com/FR0NK3NST33N/2077-components-react#readme",
   "devDependencies": {
     "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@storybook/react": "^5.0.1",
