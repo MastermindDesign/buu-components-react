@@ -1,49 +1,49 @@
 {
-  "name": "@masterminddesign/2077-components-react",
-  "version": "0.0.1",
-  "description": "Cyberpunk themed react components based on bs4",
-  "main": "./dist/2077-components-react.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -s ./public -p 9001 -c .storybook",
-    "build-storybook": "build-storybook && cp -rf ./public/images ./storybook-static/",
-    "prepublish": "rm -rf ./dist && npm run build",
-    "build": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FR0NK3NST33N/2077-components-react.git"
-  },
-  "author": "fr0nk3nst33n",
-  "license": "ISC",
-  "release": {
-    "branch": "master"
-  },
-  "bugs": {
-    "url": "https://github.com/FR0NK3NST33N/2077-components-react/issues"
-  },
-  "homepage": "https://github.com/FR0NK3NST33N/2077-components-react#readme",
-  "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-react": "^7.0.0",
-    "@storybook/react": "^5.0.1",
-    "babel-loader": "^8.0.5",
-    "css-loader": "^2.1.1",
-    "node-sass": "^4.11.0",
-    "pdf417": "^0.1.5",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
-  },
-  "peerDependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
-  },
-  "dependencies": {}
+    "name": "@masterminddesign/2077-components-react",
+    "version": "0.0.1",
+    "description": "Cyberpunk themed react components based on bs4",
+    "main": "./dist/2077-components-react.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "storybook": "start-storybook -s ./public -p 9001 -c .storybook",
+        "build-storybook": "build-storybook && cp -rf ./public/images ./storybook-static/",
+        "prepublish": "rm -rf ./dist && npm run build",
+        "build": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FR0NK3NST33N/2077-components-react.git"
+    },
+    "author": "fr0nk3nst33n",
+    "license": "ISC",
+    "release": {
+        "branch": "master"
+    },
+    "bugs": {
+        "url": "https://github.com/FR0NK3NST33N/2077-components-react/issues"
+    },
+    "homepage": "https://github.com/FR0NK3NST33N/2077-components-react#readme",
+    "devDependencies": {
+        "@babel/core": "^7.3.4",
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
+        "@babel/preset-env": "^7.3.4",
+        "@babel/preset-react": "^7.0.0",
+        "@storybook/react": "^5.0.1",
+        "babel-loader": "^8.0.5",
+        "css-loader": "^2.1.1",
+        "node-sass": "^4.11.0",
+        "pdf417": "^0.1.5",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.2.3"
+    },
+    "peerDependencies": {
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4"
+    },
+    "dependencies": {}
 }
