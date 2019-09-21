@@ -1,61 +1,84 @@
-@import "../_global.scss"; 
+@import "../_global.scss";
 
-.basicCard {
-  background-color: transparent;
-  border: 3px solid $default;
-  //border: 3px solid #fff;
-  border-radius: none;
+.basic-card {
+  .is-link {
+    cursor: pointer;
+  }
   color: $default;
-  text-shadow: 0 0 3px $default;
-  box-shadow: 0 0 3px $default;
-  //color: #fff;
-  .card-body {
-    .pdf417 {
-      img {
-        filter: sepia(100%);
-      }
-    }
-    .qrCodeBlock {
-      .qrCode {
-        //visibility: visible;
-        visibility: hidden;
-      }
-      .qrCode0 {
-        //visibility: visible;
-        visibility: hidden;
-      }
-      .qrCode1 {
-        //visibility: visible;
-        visibility: hidden;
-      }
-      .qrCode2 {
-        //visibility: visible;
-        visibility: hidden;
-      }
+  &.is-light {
+    color: $default;
+    &:hover {
+      color: $white;
     }
   }
+  &.has-glow {
+    text-shadow: 0 0 3px $default;
+    &:hover {
+      box-shadow: 0 0 3px $default;
+    }
+  }
+  min-width: 100%;
+  background-color: transparent;
+  border: 3px solid $default;
+  border-radius: 0;
+  .card-body {
+    .card-stroke {
+      stroke: $default;
+    }
+    .card-more {
+      visibility: hidden;
+      padding-top: 10px;
+    }
+    // .pdf417 {
+    //   img {
+    //     filter: sepia(100%);
+    //   }
+    // }
+    // .qrCodeBlock {
+    //   .qrCode {
+    //     //visibility: visible;
+    //     visibility: hidden;
+    //   }
+    //   .qrCode0 {
+    //     //visibility: visible;
+    //     visibility: hidden;
+    //   }
+    //   .qrCode1 {
+    //     //visibility: visible;
+    //     visibility: hidden;
+    //   }
+    //   .qrCode2 {
+    //     //visibility: visible;
+    //     visibility: hidden;
+    //   }
+    // }
+  }
   &:hover {
-    // border: 1px solid #8b0035;
-    // color: #8b0035;
-    border: 3px solid $green;
-    color: $green;
-    text-shadow: 0 0 3px $green;
-    box-shadow: 0 0 3px $green;
+    border: 3px solid $default;
+    color: $background;
+    background-color: $default;
+    box-shadow: 0 0 3px $default;
     .card-body {
-      .qrCodeBlock {
-        .qrCode {
-          visibility: visible;
-        }
-        .qrCode0 {
-          visibility: visible;
-        }
-        .qrCode1 {
-          visibility: visible;
-        }
-        .qrCode2 {
-          visibility: visible;
-        }
+      .card-stroke {
+        stroke: $background;
       }
+      .card-more {
+        visibility: visible;
+      }
+      // .qrCodeBlock {
+      //   .qrCode {
+      //     visibility: visible;
+      //   }
+      //   .qrCode0 {
+      //     visibility: visible;
+      //   }
+      //   .qrCode1 {
+      //     visibility: visible;
+      //   }
+      //   .qrCode2 {
+      //     visibility: visible;
+      //   }
+      // }
     }
   }
 }

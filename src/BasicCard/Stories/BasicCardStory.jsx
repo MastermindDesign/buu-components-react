@@ -6,26 +6,14 @@ storiesOf("Cards", module).add("basic", () => (
   <div>
     <div className="container">
       <div className="row">
-        <div className="col-sm d-flex align-items-stretch">
+        <div className="col d-flex">
           <BasicCard title="Hello" message="world" />
         </div>
-        <div className="col-sm d-flex align-items-stretch">
+        <div className="col d-flex">
           <BasicCard title="Hello" message="world this is a test" qrCode="1" />
         </div>
-        <div className="col-sm d-flex align-items-stretch">
+        <div className="col d-flex">
           <BasicCard title="Hello" message="world" qrCode="2" />
-        </div>
-        <div className="col-sm d-flex align-items-stretch">
-          <BasicCard title="Hello" message="world" />
-        </div>
-        <div className="col-sm d-flex align-items-stretch">
-          <BasicCard title="Hello" message="world" qrCode="1" />
-        </div>
-        <div className="col-sm d-flex align-items-stretch">
-          <BasicCard title="Hello" message="world" qrCode="2" />
-        </div>
-        <div className="col-sm d-flex align-items-stretch">
-          <BasicCard title="Hello" message="world" />
         </div>
       </div>
       <div className="row">
